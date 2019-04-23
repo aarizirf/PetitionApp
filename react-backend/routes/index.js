@@ -18,4 +18,9 @@ router.get('/ideas', function (req, res) {
   console.log(req);
 });
 
+router.post("/ideas/new", function(req, res) {
+  console.log(req.body.text);
+
+});
+
 module.exports = router;
